@@ -1,0 +1,150 @@
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+.chat{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #F3EEE7;
+}
+#root{
+	width: 700px;
+	overflow: hidden;
+	border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04);
+    background-color: #E2D7CD;
+    margin: 30px auto 0 ;
+    height: 750px;
+}
+.chat-head{
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border-bottom: 1px solid #CDCECE;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	align-items: center;
+}
+.image-style{
+	width: 55px;
+	height: 55px;
+	border-radius: 100%;
+	margin-left: 10px;
+}
+#user-name{
+	height: 55px;
+	line-height: 55px;
+	margin: 0 10px;
+}
+#user-name:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+#room{
+	height: 55px;
+	line-height: 55px;
+}
+.chat-content{
+	width: 100%;
+	height: calc(100% - 80px);
+	overflow: hidden;
+}
+.chat-left{
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+.chat-right{
+	width: 30%;
+	height: 100%;
+	float: left;
+	border-left: 1px solid #CDCECE;
+	box-sizing: border-box;
+	overflow: auto;
+}
+.add-room{
+	padding: 5px;
+	color: #333;
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
+	overflow:hidden;
+	box-sizing: border-box;
+	border-bottom: 1px solid #CDCECE;
+}
+#room-list div{
+	border-bottom: 1px solid #CDCECE;
+	padding:5px;
+}
+#room-list div:hover{
+	background-color: lightgray;
+	cursor: pointer;
+}
+.chat-main{
+	width: 100%;
+	height: calc(100% - 150px);
+	overflow: auto;
+}
+
+/*设置滚动条*/
+.chat-main::-webkit-scrollbar{
+	width: 12px;
+	height: 12px;
+	background-color: #b6ada7;
+}
+.chat-main::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #b6ada7;
+}
+.chat-main::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #b6ada7;  
+}
+/*设置滚动条*/
+
+.send-info{
+	width: 100%;
+	height: 100px;
+	border: none;
+	padding: 10px 10px 5px 10px;
+	box-sizing: border-box;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+}
+.send-button{
+	width: 100%;
+	overflow: hidden;
+	text-align: right;
+	margin-top: 10px;
+}
+.button-style{
+	width: 70px;
+	padding: 5px;
+	border: none;
+	background-color: #9e7755;
+	color: white;
+}
+.button-style:hover{
+	background-color: #c8a181;
+}
+
+.chat-footer{
+	width:100%;
+	height: 150px;
+	overflow:hidden;
+	box-sizing:border-box;
+	border-top: 1px solid #CDCECE;
+}
+
+
